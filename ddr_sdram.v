@@ -1,20 +1,3 @@
-/****************************************************************************** 
-* 
-*  LOGIC CORE:          DDR SDRAM Controller							 
-*  MODULE NAME:         ddr_sdram() 
-*  COMPANY:             Northwest Logic Design, Inc. 
-*                       www.nwlogic.com	 
-* 
-*  REVISION HISTORY:   
-* 
-*    Revision 1.0  05/12/2000	Description: Initial Release. 
-* 
-*  FUNCTIONAL DESCRIPTION: 
-* 
-*  This module is the top level module for the DDR SDRAM Controller 
-* 
-*  Copyright Northwest Logic Design, Inc., 2000.  All rights reserved. 
-******************************************************************************/ 
 module ddr_sdram( 
         CLK, 
         RESET_N, 
@@ -37,22 +20,12 @@ module ddr_sdram(
         ); 
  
  
-
- 
-// Address Space Parameters 
- 
-`define ROWSTART        8            
-`define ROWSIZE         12 
-`define COLSTART        0 
-`define COLSIZE         8 
-`define BANKSTART       19 
-`define BANKSIZE        2 
- 
-// Address and Data Bus Sizes 
- 
-`define ASIZE           22      // total address width of the SDRAM 
-`define DSIZE         128       // Width of data bus to SDRAMS 
- 
+`include        "params.v" 
+`include        "pll1.v"
+`include        "altclklock.v"
+`include        "ddr_controle_interface.v"
+`include        "ddr_commands.v"
+`include        "ddr_data_path.v"
 
  
 input                           CLK;                    //System Clock 
@@ -119,7 +92,7 @@ wire                            dqoe4;
  
  
  
-// instantiate the pll 
+//initiate the pll 
 pll1 PLL_1 ( 
                 .inclock(CLK), 
                 .clock0(CLK100), 

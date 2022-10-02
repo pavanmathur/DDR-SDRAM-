@@ -1,7 +1,8 @@
-`timescale 1ns / 100ps 
+//`timescale 1ns / 100ps 
  
 module ddr_sdram_tb(); 
- 
+ `include "mt46v4m16.v"
+ `include "ddr_sdram.v"
  
 // defines for the testbench 
 `define         BL              8               // burst length 
@@ -10,23 +11,7 @@ module ddr_sdram_tb();
 `define         LOOP_LENGTH     1024            // memory test loop length 
  
  
-
- 
-// Address Space Parameters 
- 
-`define ROWSTART        8            
-`define ROWSIZE         12 
-`define COLSTART        0 
-`define COLSIZE         8 
-`define BANKSTART       19 
-`define BANKSIZE        2 
- 
-// Address and Data Bus Sizes 
- 
-`define ASIZE           22      // total address width of the SDRAM 
-`define DSIZE         128       // Width of data bus to SDRAMS 
- 
-
+`include        "params.v" 
  
  
 reg                             clk;                    // Generated System Clock 
@@ -40,7 +25,8 @@ reg                             ref_ack;
 reg     [`DSIZE-1:0]            datain; 
 reg     [`DSIZE/8-1:0]          dm; 
  
- 
+//reg                            CLK100;
+//reg                            CLK200; 
 wire                            cmdack; 
 wire    [`DSIZE-1:0]            dataout; 
 wire    [11:0]                  sa; 
@@ -193,13 +179,22 @@ initial begin
         clk = 1;                        // initialize clocks 
         clk2 = 1; 
         reset_n = 0;                    // do a reset 
-        #10 reset_n = 1; 
+        #100 reset_n = 1; 
 end 
  
 always begin 
         #3 clk2 = ~clk2; 
         #2 clk = ~clk; 
 end 
+
+/*initial begin
+CLK100 = clk;
+CLK200 = clk2;
+end
+always begin
+CLK100 = ~CLK100;
+CLK200 = ~CLK200;
+end*/ 
  
 //      write_burst(address, start_value, data_mask, RCD, BL) 
 // 
@@ -231,13 +226,13 @@ task    burst_write;
                 @(cmdack==1);                     // Wait for ACK from controller 
                 cmd  <= 3'b000;                   // issue a NOP after the ack 
                 for (i=1 ; i<=(RCD-1); i=i+1)     // Wait until RCD has expired before clocking 
-                @(posedge clk);                   // data into the controller 
+                @(posedge clk or negedge clk);                   // data into the controller 
                 for(i = 1; i <= BL; i = i + 1)     
                 begin 
                         #2; 
                         datain <= start_value + i;     // clock the data in 
                         #2; 
-                        @(posedge clk); 
+                        @(posedge clk or negedge clk); 
                         
                 end 
                 dm <= 0;	 
@@ -280,13 +275,13 @@ task    burst_read;
                 addr  <= address;                      // Setup the requested address 
                 cmd   <= 3'b001;                       // Issue a burst read command 
                 @(cmdack == 1);                        // wait for the ack from the controller 
-                @(posedge clk);     
+                @(posedge clk or negedge clk);     
                 cmd <= 3'b000;                         // Issue a NOP 
                 for (i=1 ; i<=(ddr_cl+RCD+4); i=i+1)   // wait for RCD to pass 
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
                 for(i = 1; i <= BL; i = i + 1) 
                 begin 
-                        @(posedge clk); 
+                        @(posedge clk or negedge clk); 
                         read_data <= dataout;          // capture the read data 
                         #2; 
                         if (read_data !== start_value + i - 1) 
@@ -322,9 +317,9 @@ task config1;
         begin 
    
                 config_data <= 0; 
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
                                                            
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
                 if (bl == 2) 
                         config_data[2:0] <= 3'b001;         // set the burst length bits 
                 else if (bl == 4) 
@@ -342,13 +337,13 @@ task config1;
                          
          
                                                          // issue precharge before issuing load_mode 
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
                 cmd <= 3'b100;                           // Issupe precharge command 
                 @(cmdack == 1)                           // wait for acknowledge from controller 
                 #2; 
                 cmd <= 3'b000;                           // NOP 
  
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
                 #2; 
          
                                                         // load mode register 
@@ -357,15 +352,15 @@ task config1;
                 @(cmdack == 1)                          // wait for an ack from the controller 
                 cmd <= 3'b000;                          // NOP 
  
-                @(posedge clk); 
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
+                @(posedge clk or negedge clk); 
    
    
                 config_data <= 0; 
                 config_data[15:0] <= ref;                // set the refresh value 
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
                                                          // load refresh counter 
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
                 addr[15:0] <= config_data;               // put the refresh period value onto ADDR    
                 cmd  <= 3'b111;                          // issue a load reg2 command 
                 @(cmdack == 1 );                         // wait for an ack from the controller    
@@ -378,7 +373,7 @@ task config1;
                 config_data[3:2] <= rc; 
                 config_data[8] <= pm; 
                 config_data[12:9] <= bl/2; 
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
                 #2; 
                 addr[15:0] <= config_data; 
                 cmd  <= 3'b110;                          // issue load reg2 command 
@@ -451,8 +446,8 @@ initial begin
         $display("Peforming burst write to first sdram bank"); 
         test_data <= 0; 
         test_addr <= 0; 
-        @(posedge clk); 
-        @(posedge clk); 
+        @(posedge clk or negedge clk); 
+        @(posedge clk or negedge clk); 
         for (j = 0; j < `LOOP_LENGTH; j = j + 1) 
         begin 
                 burst_write(test_addr, test_data, 4'h0, z, bl); 
@@ -466,14 +461,14 @@ initial begin
         $display("Performing burst read, verify ramp values in first sdram bank"); 
         test_data <= 0; 
         test_addr <= 0; 
-        @(posedge clk); 
-        @(posedge clk); 
+        @(posedge clk or negedge clk); 
+        @(posedge clk or negedge clk); 
         for (j = 0; j < `LOOP_LENGTH; j = j + 1) 
         begin 
                 burst_read(test_addr, test_data, y, z, bl); 
                 test_data <= test_data + bl; 
                 test_addr <= test_addr + bl*2; 
-                @(posedge clk); 
+                @(posedge clk  or negedge clk); 
         end 
          
         #500; 
@@ -482,14 +477,14 @@ initial begin
         $display("Peforming burst write to second sdram bank"); 
         test_data <= 0; 
         test_addr <= 22'h200000; 
-        @(posedge clk); 
-        @(posedge clk); 
+        @(posedge clk or negedge clk); 
+        @(posedge clk or negedge clk); 
         for (j = 0; j < `LOOP_LENGTH; j = j + 1) 
         begin 
                 burst_write(test_addr, test_data, 4'h0, z, bl); 
                 test_data <= test_data + bl; 
                 test_addr <= test_addr + bl*2; 
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
         end 
          
 // perform 1024 burst reads, verifing the ramp pattern 
@@ -497,14 +492,14 @@ initial begin
         test_data <= 0; 
         test_addr <= 22'h200000; 
  
-        @(posedge clk); 
-        @(posedge clk); 
+        @(posedge clk or negedge clk); 
+        @(posedge clk or negedge clk); 
         for (j = 0; j < `LOOP_LENGTH; j = j + 1) 
         begin 
                 burst_read(test_addr, test_data, y, z, bl); 
                 test_data <= test_data + bl; 
                 test_addr <= test_addr + bl*2; 
-                @(posedge clk); 
+                @(posedge clk or negedge clk); 
         end 
          
         #500; 

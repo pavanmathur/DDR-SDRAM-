@@ -1,0 +1,52 @@
+`ifndef _tb_
+`define _tb_
+
+`include "ddr_base.sv"
+`include "configurations.sv"
+`include "ddr_drv.sv"
+`include "ddr_gen.sv"
+`include "ddr_monitor.sv"
+`include "ddr_score.sv"
+`include "ddr_env.sv"
+
+module tb(ddr_intf.tb inf);
+  configurations cfg;
+  environment    env;
+  
+   
+initial 
+begin
+  
+/*
+  cfg             =new();
+  cfg.num_txns    = 4;
+  cfg.cmd1         = cfg.WRITEA;
+  cfg.ADDR       = cfg.incremental;
+  cfg.DATAIN       = cfg.incremental1;
+  cfg.DM          = cfg.random_dm;
+  cfg.DQ          = cfg.random_dq;
+  cfg.DQS         = cfg.random_dqs;
+  cfg.CMD         = cfg.random_cmd;*/
+  
+  
+  
+  cfg             =new();
+  cfg.num_txns    = 1;
+  cfg.cmd1         = cfg.READA;
+  cfg.ADDR       = cfg.random;
+  cfg.DATAIN       = cfg.random1;
+  cfg.DM          = cfg.random_dm;
+  cfg.DQ          = cfg.random_dq;
+  cfg.DQS         = cfg.random_dqs;
+  cfg.CMD         = cfg.random_cmd;
+  
+
+  env             = new(inf,cfg);
+  env.env_run();
+end	
+
+endmodule
+
+  
+`endif
+

@@ -1,1 +1,830 @@
-# Reading C:/questasim_10.0b/tcl/vsim/pref.tcl 
+# Compile of altclklock.v was successful.
+# Compile of configurations.sv was successful.
+# Compile of coverage_ddr.sv was successful.
+# Compile of ddr_base.sv was successful.
+# Compile of ddr_commands.v was successful.
+# Compile of ddr_controle_interface.v was successful.
+# Compile of ddr_data_path.v was successful.
+# Compile of ddr_drv.sv was successful.
+# Compile of ddr_dut.sv was successful.
+# Compile of ddr_env.sv was successful.
+# Compile of ddr_gen.sv was successful.
+# Compile of ddr_intf.sv was successful.
+# Compile of ddr_monitor.sv was successful.
+# Compile of ddr_score.sv was successful.
+# Compile of ddr_sdram.v was successful.
+# Compile of ddr_sdram_tb.v was successful.
+# Compile of ddr_tb.sv was successful.
+# Compile of ddr_top.sv was successful.
+# Compile of mt46v4m16.v was successful.
+# Compile of params.v was successful.
+# Compile of pll1.v was successful.
+# 21 compiles, 0 failed with no errors. 
+vsim -gui work.top
+# vsim -gui work.top 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.ddr_top_sv_unit
+# Loading work.top(fast)
+# Loading work.ddr_intf(fast)
+# Loading work.dut(fast)
+# Loading work.ddr_sdram(fast)
+# Loading work.tb(fast)
+# Loading work.ddr_sdram_tb(fast)
+add wave sim:/top/inf/*
+run
+#                    0ENVIRONMENT :: Run Phase
+#                    0GENERATOR :: Run Phase
+# Randomized Configurations='{cmd1:WRITEA, ADDR:incremental, DATAIN:incremental1, DM:random_dm, DQ:random_dq, DQS:random_dqs, CMD:random_cmd, num_txns:4, TXDATAIN:0, TXADDR:0, TXDM:0, TXDQ:0, TXDQS:0, TXCMD:0, user_DATAIN:x, user_ADDR:x, user_DM:x, user_DQ:x, user_DQS:x, user_CMD:x}
+#                    0DRIVER :: Run Phase
+#                    0datain=                                      0,addr=      0,dm=13604,dq=18446744072644812417,dqs=  0,cmd=0
+#                    0Data Matched :: Run Phase
+#                    0SCOREBOARD :: Run Phase
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+#                    5Error: Duty Cycle violation
+#                   10Error: Duty Cycle violation
+#                   10DRIVER :: Run Phase
+#                   10datain=                                      1,addr=      1,dm=54793,dq=18446744072399902307,dqs=  0,cmd=0
+#                   10Data Matched :: Run Phase
+#                   20DRIVER :: Run Phase
+#                   20datain=                                      2,addr=      2,dm=31501,dq=          1189058957,dqs=  0,cmd=0
+#                   20Data Matched :: Run Phase
+#                   30DRIVER :: Run Phase
+#                   30datain=                                      3,addr=      3,dm=33893,dq=18446744071716688402,dqs=  0,cmd=0
+#                   30Data Matched :: Run Phase
+#                   40DRIVER :: Run Phase
+#                   40datain=                                      4,addr=      4,dm=58113,dq=           114806029,dqs=  0,cmd=0
+#                   40Data Matched :: Run Phase
+#                   50DRIVER :: Run Phase
+#                   50datain=                                      5,addr=      5,dm=61814,dq=           512609597,dqs=  0,cmd=0
+#                   50Data Matched :: Run Phase
+#                   60DRIVER :: Run Phase
+#                   60datain=                                      6,addr=      6,dm=22509,dq=          1177417612,dqs=  0,cmd=0
+#                   60Data Matched :: Run Phase
+#                   70DRIVER :: Run Phase
+#                   70datain=                                      7,addr=      7,dm=59897,dq=18446744073226626246,dqs=  0,cmd=0
+#                   70Data Matched :: Run Phase
+#                   80DRIVER :: Run Phase
+#                   80datain=                                      8,addr=      8,dm=33989,dq=18446744072989430442,dqs=  0,cmd=0
+#                   80Data Matched :: Run Phase
+#                   90DRIVER :: Run Phase
+#                   90datain=                                      9,addr=      9,dm=63461,dq=18446744072565715575,dqs=  0,cmd=2
+#                   90Data Matched :: Run Phase
+#                  100DRIVER :: Run Phase
+#                  100datain=                                      9,addr=      9,dm=63461,dq=18446744072565715575,dqs=  0,cmd=2
+#                  100Data Matched :: Run Phase
+run
+#                  110DRIVER :: Run Phase
+#                  110datain=                                     10,addr=     10,dm=54802,dq=          1206705039,dqs=  0,cmd=0
+#                  110Data Matched :: Run Phase
+#                  120DRIVER :: Run Phase
+#                  120datain=                                     11,addr=     11,dm=27122,dq=18446744073297893070,dqs=  0,cmd=0
+#                  120Data Matched :: Run Phase
+#                  130DRIVER :: Run Phase
+#                  130datain=                                     12,addr=     12,dm=31464,dq=18446744073219493573,dqs=  0,cmd=0
+#                  130Data Matched :: Run Phase
+#                  140DRIVER :: Run Phase
+#                  140datain=                                     13,addr=     13,dm=18780,dq=18446744073148442813,dqs=  0,cmd=0
+#                  140Data Matched :: Run Phase
+#                  150DRIVER :: Run Phase
+#                  150datain=                                     14,addr=     14,dm=22573,dq=18446744072411883109,dqs=  0,cmd=0
+#                  150Data Matched :: Run Phase
+#                  160DRIVER :: Run Phase
+#                  160datain=                                     15,addr=     15,dm=25187,dq=            91457290,dqs=  0,cmd=0
+#                  160Data Matched :: Run Phase
+#                  170DRIVER :: Run Phase
+#                  170datain=                                     16,addr=     16,dm= 8832,dq=           274997536,dqs=  0,cmd=0
+#                  170Data Matched :: Run Phase
+#                  180DRIVER :: Run Phase
+#                  180datain=                                     17,addr=     17,dm=17834,dq=18446744072884112541,dqs=  0,cmd=0
+#                  180Data Matched :: Run Phase
+#                  190DRIVER :: Run Phase
+#                  190datain=                                     18,addr=     18,dm=16022,dq=18446744071721695251,dqs=  0,cmd=0
+#                  190Data Matched :: Run Phase
+#                  200DRIVER :: Run Phase
+#                  200datain=                                     19,addr=     19,dm=14349,dq=18446744072260933203,dqs=  0,cmd=2
+#                  200Data Matched :: Run Phase
+run
+#                  210DRIVER :: Run Phase
+#                  210datain=                                     19,addr=     19,dm=14349,dq=18446744072260933203,dqs=  0,cmd=2
+#                  210Data Matched :: Run Phase
+#                  220DRIVER :: Run Phase
+#                  220datain=                                     20,addr=     20,dm=56683,dq=18446744073351342805,dqs=  0,cmd=0
+#                  220Data Matched :: Run Phase
+#                  230DRIVER :: Run Phase
+#                  230datain=                                     21,addr=     21,dm=18946,dq=18446744073027337902,dqs=  0,cmd=0
+#                  230Data Matched :: Run Phase
+#                  240DRIVER :: Run Phase
+#                  240datain=                                     22,addr=     22,dm=59677,dq=18446744073303061199,dqs=  0,cmd=0
+#                  240Data Matched :: Run Phase
+#                  250DRIVER :: Run Phase
+#                  250datain=                                     23,addr=     23,dm=18723,dq=            84501770,dqs=  0,cmd=0
+#                  250Data Matched :: Run Phase
+#                  260DRIVER :: Run Phase
+#                  260datain=                                     24,addr=     24,dm= 2762,dq=18446744072068615228,dqs=  0,cmd=0
+#                  260Data Matched :: Run Phase
+#                  270DRIVER :: Run Phase
+#                  270datain=                                     25,addr=     25,dm=48626,dq=          1160667530,dqs=  0,cmd=0
+#                  270Data Matched :: Run Phase
+#                  280DRIVER :: Run Phase
+#                  280datain=                                     26,addr=     26,dm=45889,dq=18446744073378936024,dqs=  0,cmd=0
+#                  280Data Matched :: Run Phase
+#                  290DRIVER :: Run Phase
+#                  290datain=                                     27,addr=     27,dm=62328,dq=18446744072711967369,dqs=  0,cmd=0
+#                  290Data Matched :: Run Phase
+#                  300DRIVER :: Run Phase
+#                  300datain=                                     28,addr=     28,dm= 3563,dq=          1526883766,dqs=  0,cmd=0
+#                  300Data Matched :: Run Phase
+run
+#                  310DRIVER :: Run Phase
+#                  310datain=                                     29,addr=     29,dm=63942,dq=          1460999086,dqs=  0,cmd=2
+#                  310Data Matched :: Run Phase
+#                  320DRIVER :: Run Phase
+#                  320datain=                                     29,addr=     29,dm=63942,dq=          1460999086,dqs=  0,cmd=2
+#                  320Data Matched :: Run Phase
+#                  330DRIVER :: Run Phase
+#                  330datain=                                     30,addr=     30,dm=  700,dq=           353361194,dqs=  0,cmd=0
+#                  330Data Matched :: Run Phase
+#                  340DRIVER :: Run Phase
+#                  340datain=                                     31,addr=     31,dm=39435,dq=18446744072511536753,dqs=  0,cmd=0
+#                  340Data Matched :: Run Phase
+#                  350DRIVER :: Run Phase
+#                  350datain=                                     32,addr=     32,dm=16773,dq=           670192975,dqs=  0,cmd=0
+#                  350Data Matched :: Run Phase
+#                  360DRIVER :: Run Phase
+#                  360datain=                                     33,addr=     33,dm=24635,dq=           486945594,dqs=  0,cmd=0
+#                  360Data Matched :: Run Phase
+#                  370DRIVER :: Run Phase
+#                  370datain=                                     34,addr=     34,dm=12926,dq=           178932501,dqs=  0,cmd=0
+#                  370Data Matched :: Run Phase
+#                  380DRIVER :: Run Phase
+#                  380datain=                                     35,addr=     35,dm=39921,dq=          1822182361,dqs=  0,cmd=0
+#                  380Data Matched :: Run Phase
+#                  390DRIVER :: Run Phase
+#                  390datain=                                     36,addr=     36,dm= 1890,dq=           641071948,dqs=  0,cmd=0
+#                  390Data Matched :: Run Phase
+#                  400DRIVER :: Run Phase
+#                  400datain=                                     37,addr=     37,dm=21919,dq=          1203347855,dqs=  0,cmd=0
+#                  400Data Matched :: Run Phase
+run
+#                  410DRIVER :: Run Phase
+#                  410datain=                                     38,addr=     38,dm=43512,dq=18446744073102254263,dqs=  0,cmd=0
+#                  410Data Matched :: Run Phase
+#                  420DRIVER :: Run Phase
+#                  420datain=                                     39,addr=     39,dm=22175,dq=18446744072342049884,dqs=  0,cmd=2
+#                  420Data Matched :: Run Phase
+#                  430DRIVER :: Run Phase
+#                  430datain=                                     39,addr=     39,dm=22175,dq=18446744072342049884,dqs=  0,cmd=2
+#                  430Data Matched :: Run Phase
+#                  440DRIVER :: Run Phase
+#                  440datain=                                     40,addr=     40,dm=49243,dq=          1155413897,dqs=  0,cmd=0
+#                  440Data Matched :: Run Phase
+#                  450DRIVER :: Run Phase
+#                  450datain=                                     41,addr=     41,dm=12873,dq=18446744073309208272,dqs=  0,cmd=0
+#                  450Data Matched :: Run Phase
+#                  460DRIVER :: Run Phase
+#                  460datain=                                     42,addr=     42,dm=49367,dq=18446744072246262865,dqs=  0,cmd=0
+#                  460Data Matched :: Run Phase
+#                  470DRIVER :: Run Phase
+#                  470datain=                                     43,addr=     43,dm=12182,dq=           102596364,dqs=  0,cmd=0
+#                  470Data Matched :: Run Phase
+#                  480DRIVER :: Run Phase
+#                  480datain=                                     44,addr=     44,dm=52930,dq=          1683484104,dqs=  0,cmd=0
+#                  480Data Matched :: Run Phase
+#                  490DRIVER :: Run Phase
+#                  490datain=                                     45,addr=     45,dm=23159,dq=           519236925,dqs=  0,cmd=0
+#                  490Data Matched :: Run Phase
+#                  500DRIVER :: Run Phase
+#                  500datain=                                     46,addr=     46,dm=56082,dq=18446744072619360382,dqs=  0,cmd=0
+#                  500Data Matched :: Run Phase
+run
+#                  510DRIVER :: Run Phase
+#                  510datain=                                     47,addr=     47,dm=33133,dq=           484042553,dqs=  0,cmd=0
+#                  510Data Matched :: Run Phase
+#                  520DRIVER :: Run Phase
+#                  520datain=                                     48,addr=     48,dm=36639,dq=18446744073339139795,dqs=  0,cmd=0
+#                  520Data Matched :: Run Phase
+#                  530DRIVER :: Run Phase
+#                  530datain=                                     49,addr=     49,dm=12165,dq=18446744072570046584,dqs=  0,cmd=2
+#                  530Data Matched :: Run Phase
+#                  540DRIVER :: Run Phase
+#                  540datain=                                     49,addr=     49,dm=12165,dq=18446744072570046584,dqs=  0,cmd=2
+#                  540Data Matched :: Run Phase
+#                  550DRIVER :: Run Phase
+#                  550datain=                                     50,addr=     50,dm=22875,dq=           613108553,dqs=  0,cmd=0
+#                  550Data Matched :: Run Phase
+#                  560DRIVER :: Run Phase
+#                  560datain=                                     51,addr=     51,dm=44607,dq=           353152810,dqs=  0,cmd=0
+#                  560Data Matched :: Run Phase
+#                  570DRIVER :: Run Phase
+#                  570datain=                                     52,addr=     52,dm=25432,dq=18446744072690284678,dqs=  0,cmd=0
+#                  570Data Matched :: Run Phase
+#                  580DRIVER :: Run Phase
+#                  580datain=                                     53,addr=     53,dm= 3214,dq=18446744072873833116,dqs=  0,cmd=0
+#                  580Data Matched :: Run Phase
+#                  590DRIVER :: Run Phase
+#                  590datain=                                     54,addr=     54,dm=39418,dq=18446744071889075238,dqs=  0,cmd=0
+#                  590Data Matched :: Run Phase
+#                  600DRIVER :: Run Phase
+#                  600datain=                                     55,addr=     55,dm= 6003,dq=18446744072930178211,dqs=  0,cmd=0
+#                  600Data Matched :: Run Phase
+force -freeze sim:/top/inf/CMD 001 0
+force -freeze sim:/top/inf/ADDR 0000000000000000001001 0
+run
+#                  610DRIVER :: Run Phase
+#                  610datain=                                     56,addr=     56,dm=43055,dq=18446744073069040307,dqs=  0,cmd=0
+#                  610Data Matched :: Run Phase
+#                  620DRIVER :: Run Phase
+#                  620datain=                                     57,addr=     57,dm=22111,dq=           573115716,dqs=  0,cmd=0
+#                  620Data Matched :: Run Phase
+#                  630DRIVER :: Run Phase
+#                  630datain=                                     58,addr=     58,dm=65015,dq=18446744073266738891,dqs=  0,cmd=0
+#                  630Data Matched :: Run Phase
+#                  640DRIVER :: Run Phase
+#                  640datain=                                     59,addr=     59,dm= 6886,dq=           757652314,dqs=  0,cmd=2
+#                  640Data Matched :: Run Phase
+#                  650DRIVER :: Run Phase
+#                  650datain=                                     59,addr=     59,dm= 6886,dq=           757652314,dqs=  0,cmd=2
+#                  650Data Matched :: Run Phase
+#                  660DRIVER :: Run Phase
+#                  660datain=                                     60,addr=     60,dm=49449,dq=18446744073550357229,dqs=  0,cmd=0
+#                  660Data Matched :: Run Phase
+#                  670DRIVER :: Run Phase
+#                  670datain=                                     61,addr=     61,dm=27866,dq=18446744072411395685,dqs=  0,cmd=0
+#                  670Data Matched :: Run Phase
+#                  680DRIVER :: Run Phase
+#                  680datain=                                     62,addr=     62,dm=58037,dq=18446744073436828895,dqs=  0,cmd=0
+#                  680Data Matched :: Run Phase
+#                  690DRIVER :: Run Phase
+#                  690datain=                                     63,addr=     63,dm= 6521,dq=           573701956,dqs=  0,cmd=0
+#                  690Data Matched :: Run Phase
+#                  700DRIVER :: Run Phase
+#                  700datain=                                     64,addr=     64,dm= 3280,dq=           352914218,dqs=  0,cmd=0
+#                  700Data Matched :: Run Phase
+# Compile of altclklock.v was successful.
+# Compile of configurations.sv was successful.
+# Compile of coverage_ddr.sv was successful.
+# Compile of ddr_base.sv was successful.
+# Compile of ddr_commands.v was successful.
+# Compile of ddr_controle_interface.v was successful.
+# Compile of ddr_data_path.v was successful.
+# Compile of ddr_drv.sv was successful.
+# Compile of ddr_dut.sv was successful.
+# Compile of ddr_env.sv was successful.
+# Compile of ddr_gen.sv was successful.
+# Compile of ddr_intf.sv was successful.
+# Compile of ddr_monitor.sv was successful.
+# Compile of ddr_score.sv was successful.
+# Compile of ddr_sdram.v was successful.
+# Compile of ddr_sdram_tb.v was successful.
+# Compile of ddr_tb.sv was successful.
+# Compile of ddr_top.sv was successful.
+# Compile of mt46v4m16.v was successful.
+# Compile of params.v was successful.
+# Compile of pll1.v was successful.
+# 21 compiles, 0 failed with no errors. 
+vsim -gui work.top
+# vsim -gui work.top 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ddr_top_sv_unit
+# Loading work.top(fast)
+# Loading work.ddr_intf(fast)
+# Loading work.dut(fast)
+# Loading work.ddr_sdram(fast)
+# Loading work.tb(fast)
+# Loading work.ddr_sdram_tb(fast)
+add wave sim:/top/inf/*
+run
+#                    0ENVIRONMENT :: Run Phase
+#                    0GENERATOR :: Run Phase
+# Randomized Configurations='{cmd1:READA, ADDR:random, DATAIN:random1, DM:random_dm, DQ:random_dq, DQS:random_dqs, CMD:random_cmd, num_txns:1, TXDATAIN:0, TXADDR:0, TXDM:0, TXDQ:0, TXDQS:0, TXCMD:0, user_DATAIN:x, user_ADDR:x, user_DM:x, user_DQ:x, user_DQS:x, user_CMD:x}
+#                    0DRIVER :: Run Phase
+#                    0datain=                              112818957,addr=1389860,dm=    0,dq=18446744072644812417,dqs=  9,cmd=3
+#                    0Data Matched :: Run Phase
+#                    0SCOREBOARD :: Run Phase
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+#                    5Error: Duty Cycle violation
+#                   10Error: Duty Cycle violation
+#                   10DRIVER :: Run Phase
+#                   10datain=                              114806029,addr=2070925,dm=    0,dq=18446744072413676645,dqs= 18,cmd=1
+#                   10Data Matched :: Run Phase
+#                   20DRIVER :: Run Phase
+#                   20datain=                             2097015289,addr=2355574,dm=    0,dq=           512609597,dqs=237,cmd=4
+#                   20Data Matched :: Run Phase
+#                   30DRIVER :: Run Phase
+#                   30datain=340282366920938463463374607430624375415,addr=3613894,dm=    0,dq=18446744073222456517,dqs=170,cmd=5
+#                   30Data Matched :: Run Phase
+#                   40DRIVER :: Run Phase
+#                   40datain=340282366920938463463374607431566916328,addr=3331602,dm=    0,dq=          1206705039,dqs=242,cmd=6
+#                   40Data Matched :: Run Phase
+#                   50DRIVER :: Run Phase
+#                   50datain=340282366920938463463374607430470542949,addr= 675525,dm=    0,dq=           777537884,dqs=189,cmd=5
+#                   50Data Matched :: Run Phase
+#                   60DRIVER :: Run Phase
+#                   60datain=                             1433945514,addr=3105379,dm=    0,dq=            91457290,dqs=128,cmd=0
+#                   60Data Matched :: Run Phase
+#                   70DRIVER :: Run Phase
+#                   70datain=340282366920938463463374607430319593043,addr= 838813,dm=    0,dq=18446744072822472342,dqs= 19,cmd=5
+#                   70Data Matched :: Run Phase
+#                   80DRIVER :: Run Phase
+#                   80datain=                              251652381,addr=2088299,dm=    0,dq=18446744073351342805,dqs=  2,cmd=6
+#                   80Data Matched :: Run Phase
+#                   90DRIVER :: Run Phase
+#                   90datain=340282366920938463463374607430127275068,addr= 357071,dm=    0,dq=           293882147,dqs= 10,cmd=2
+#                   90Data Matched :: Run Phase
+#                  100DRIVER :: Run Phase
+#                  100Data Matched :: Run Phase
+run
+#                  110Data Matched :: Run Phase
+#                  120Data Matched :: Run Phase
+#                  130Data Matched :: Run Phase
+#                  140Data Matched :: Run Phase
+#                  150Data Matched :: Run Phase
+#                  160Data Matched :: Run Phase
+#                  170Data Matched :: Run Phase
+#                  180Data Matched :: Run Phase
+#                  190Data Matched :: Run Phase
+#                  200Data Matched :: Run Phase
+run
+#                  210Data Matched :: Run Phase
+#                  220Data Matched :: Run Phase
+#                  230Data Matched :: Run Phase
+#                  240Data Matched :: Run Phase
+#                  250Data Matched :: Run Phase
+#                  260Data Matched :: Run Phase
+#                  270Data Matched :: Run Phase
+#                  280Data Matched :: Run Phase
+#                  290Data Matched :: Run Phase
+#                  300Data Matched :: Run Phase
+run
+#                  310Data Matched :: Run Phase
+#                  320Data Matched :: Run Phase
+#                  330Data Matched :: Run Phase
+#                  340Data Matched :: Run Phase
+#                  350Data Matched :: Run Phase
+#                  360Data Matched :: Run Phase
+#                  370Data Matched :: Run Phase
+#                  380Data Matched :: Run Phase
+#                  390Data Matched :: Run Phase
+#                  400Data Matched :: Run Phase
+force -freeze sim:/top/inf/CMD 001 0
+run
+#                  410Data Matched :: Run Phase
+#                  420Data Matched :: Run Phase
+#                  430Data Matched :: Run Phase
+#                  440Data Matched :: Run Phase
+#                  450Data Matched :: Run Phase
+#                  460Data Matched :: Run Phase
+#                  470Data Matched :: Run Phase
+#                  480Data Matched :: Run Phase
+#                  490Data Matched :: Run Phase
+#                  500Data Matched :: Run Phase

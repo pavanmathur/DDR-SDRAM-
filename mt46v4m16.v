@@ -45,7 +45,7 @@
  
 // DO NOT CHANGE THE TIMESCALE 
 // MAKE SURE YOUR SIMULATOR USE "PS" RESOLUTION 
-`timescale 1ns / 1ps 
+//`timescale 1ns / 1ps 
  
 module mt46v4m16 (Dq, Dqs, Addr, Ba, Clk, Clk_n, Cke, Cs_n, Ras_n, Cas_n, We_n, Dm); 
  

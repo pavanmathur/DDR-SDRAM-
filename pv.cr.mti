@@ -1,0 +1,151 @@
+E:/pvadda/ddr_top.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_top.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling package ddr_top_sv_unit
+-- Compiling module tb
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} E:/pvadda/ddr_sdram.v {1 {vlog -work work -vopt -nocovercells E:/pvadda/ddr_sdram.v
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module ddr_sdram
+-- Compiling module pll1
+-- Compiling module altclklock
+-- Compiling module ddr_control_interface
+-- Compiling module ddr_command
+-- Compiling module ddr_data_path
+
+Top level modules:
+	ddr_sdram
+
+} {} {}} E:/pvadda/ddr_score.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_score.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+
+Top level modules:
+	--none--
+
+} {} {}} E:/pvadda/coverage_ddr.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/coverage_ddr.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+
+Top level modules:
+	--none--
+
+} {} {}} E:/pvadda/pll1.v {1 {vlog -work work -vopt -nocovercells E:/pvadda/pll1.v
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module pll1
+
+Top level modules:
+	pll1
+
+} {} {}} E:/pvadda/mt46v4m16.v {1 {vlog -work work -vopt -nocovercells E:/pvadda/mt46v4m16.v
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module mt46v4m16
+
+Top level modules:
+	mt46v4m16
+
+} {} {}} E:/pvadda/ddr_tb.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_tb.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling package ddr_tb_sv_unit
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} E:/pvadda/params.v {1 {vlog -work work -vopt -nocovercells E:/pvadda/params.v
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+
+} {} {}} E:/pvadda/configurations.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/configurations.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+
+Top level modules:
+	--none--
+
+} {} {}} E:/pvadda/ddr_base.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_base.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+
+Top level modules:
+	--none--
+
+} {} {}} E:/pvadda/ddr_controle_interface.v {1 {vlog -work work -vopt -nocovercells E:/pvadda/ddr_controle_interface.v
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module ddr_control_interface
+
+Top level modules:
+	ddr_control_interface
+
+} {} {}} E:/pvadda/ddr_data_path.v {1 {vlog -work work -vopt -nocovercells E:/pvadda/ddr_data_path.v
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module ddr_data_path
+
+Top level modules:
+	ddr_data_path
+
+} {} {}} E:/pvadda/ddr_drv.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_drv.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+
+Top level modules:
+	--none--
+
+} {} {}} E:/pvadda/ddr_dut.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_dut.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module dut
+
+Top level modules:
+	dut
+
+} {} {}} E:/pvadda/ddr_commands.v {1 {vlog -work work -vopt -nocovercells E:/pvadda/ddr_commands.v
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module ddr_command
+
+Top level modules:
+	ddr_command
+
+} {} {}} E:/pvadda/altclklock.v {1 {vlog -work work -vopt -nocovercells E:/pvadda/altclklock.v
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module altclklock
+
+Top level modules:
+	altclklock
+
+} {} {}} E:/pvadda/ddr_monitor.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_monitor.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+
+Top level modules:
+	--none--
+
+} {} {}} E:/pvadda/ddr_intf.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_intf.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling interface ddr_intf
+
+Top level modules:
+	--none--
+
+} {} {}} E:/pvadda/ddr_env.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_env.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+
+Top level modules:
+	--none--
+
+} {} {}} E:/pvadda/ddr_sdram_tb.v {1 {vlog -work work -vopt -nocovercells E:/pvadda/ddr_sdram_tb.v
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+-- Compiling module ddr_sdram_tb
+-- Compiling module mt46v4m16
+-- Compiling module ddr_sdram
+-- Compiling module pll1
+-- Compiling module altclklock
+-- Compiling module ddr_control_interface
+-- Compiling module ddr_command
+-- Compiling module ddr_data_path
+
+Top level modules:
+	ddr_sdram_tb
+
+} {} {}} E:/pvadda/ddr_gen.sv {1 {vlog -work work -vopt -sv -nocovercells E:/pvadda/ddr_gen.sv
+QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+
+Top level modules:
+	--none--
+
+} {} {}}
