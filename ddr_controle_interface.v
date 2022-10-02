@@ -1,22 +1,4 @@
-/****************************************************************************** 
-* 
-*  LOGIC CORE:          DDR Control Interface - Top level module							 
-*  MODULE NAME:         ddr_control_interface() 
-*  COMPANY:             Northwest Logic Design, Inc. 
-*                       www.nwlogic.com	 
-* 
-*  REVISION HISTORY:   
-* 
-*    Revision 1.0  05/12/2000	Description: Initial Release. 
-* 
-*  FUNCTIONAL DESCRIPTION: 
-* 
-*  This module is the command interface module for the SDR SDRAM controller. 
-* 
-* 
-* Copyright Northwest Logic Design, Inc., 2000.  All rights reserved. 
-******************************************************************************/ 
-module ddr_control_interface( 
+ module ddr_control_interface( 
         CLK, 
         RESET_N, 
         CMD, 
@@ -39,23 +21,7 @@ module ddr_control_interface(
         CMD_ACK 
         ); 
  
-
- 
-// Address Space Parameters 
- 
-`define ROWSTART        8            
-`define ROWSIZE         12 
-`define COLSTART        0 
-`define COLSIZE         8 
-`define BANKSTART       19 
-`define BANKSIZE        2 
- 
-// Address and Data Bus Sizes 
- 
-`define ASIZE           22      // total address width of the SDRAM 
-`define DSIZE         128       // Width of data bus to SDRAMS 
- 
-
+`include        "params.v" 
  
 input                           CLK;                    // System Clock 
 input                           RESET_N;                // System Reset 

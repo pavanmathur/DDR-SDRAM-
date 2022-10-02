@@ -1,20 +1,3 @@
-/****************************************************************************** 
-* 
-*  LOGIC CORE:          DDR Data Path Module							 
-*  MODULE NAME:         ddr_data_path() 
-*  COMPANY:             Northwest Logic Design, Inc.	 
-* 
-*  REVISION HISTORY:   
-* 
-*    Revision 1.0  05/12/2000	Description: Initial Release. 
-* 
-*  FUNCTIONAL DESCRIPTION: 
-* 
-*  This module is the top level module for the Local bus version of the 
-*  SDRAM controller. 
-* 
-*  Copyright Northwest Logic Design, Inc., 2000.  All rights reserved. 
-******************************************************************************/ 
 module ddr_data_path( 
         CLK100, 
         CLK200, 
@@ -31,23 +14,7 @@ module ddr_data_path(
         DQOE 
         ); 
  
-
- 
-// Address Space Parameters 
- 
-`define ROWSTART        8            
-`define ROWSIZE         12 
-`define COLSTART        0 
-`define COLSIZE         8 
-`define BANKSTART       19 
-`define BANKSIZE        2 
- 
-// Address and Data Bus Sizes 
- 
-`define ASIZE           22      // total address width of the SDRAM 
-`define DSIZE         128       // Width of data bus to SDRAMS 
- 
-
+`include        "params.v" 
  
 input                           CLK100;                 // System 1x Clock 
 input                           CLK200;                 // System 2x clock 
@@ -104,7 +71,7 @@ reg                             ioen;
 reg     [15:0]                  din2x_1a; 
  
  
- 
+
  
 //   This always block registers the write data from the user interface 
 //   and prepares to transfer it over to the 2x clock domain. 
@@ -170,6 +137,7 @@ begin
          
         else 
         begin 
+                dq1 <= DATAIN;
                 dq2 <= dq1;                            // pipeline the data 
                 DQM  <= dm1;                           // send the data mask out 
                  
@@ -282,7 +250,10 @@ end
 assign  DQOUT = dq2;  
 assign  DQOE  = ioen;  
 assign  DQS[0] = dqs_oea ? dqs2a : 1'bz; 
-assign  DQS[1] = dqs_oeb ? dqs2b : 1'bz; 
+assign  DQS[1] = dqs_oeb ? dqs2b : 1'bz;
+
+//assign DATAOUT[15:0] = din1x_l3;
+//assign DATAOUT[31:16] = din1x_h3; 
  
 endmodule 
  

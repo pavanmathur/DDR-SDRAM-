@@ -32,7 +32,7 @@
 //megafunction partner, remains with Altera, the megafunction partner, or 
 //their respective licensors.  No other licenses, including any licenses 
 //needed under any third party's intellectual property, are provided herein. 
-`timescale 1 ps / 1 ps 
+//`timescale 1 ps / 1 ps 
  
 module pll1 ( 
 	inclock, 
@@ -60,8 +60,8 @@ module pll1 (
 				.locked (sub_wire2)); 
 	defparam 
 		altclklock_component.inclock_period = 10000, 
-		altclklock_component.clock0_boost = 1, 
-		altclklock_component.clock1_boost = 2, 
+		altclklock_component.clock0_boost = 100, 
+		altclklock_component.clock1_boost = 200, 
 		altclklock_component.operation_mode = "NORMAL", 
 		altclklock_component.valid_lock_cycles = 5, 
 		altclklock_component.invalid_lock_cycles = 5, 
