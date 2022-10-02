@@ -1,4 +1,4 @@
-# DDR-SDRAM-
+# DDR-SDRAM- Verilog and System Verilog code for Design and Verificaiton 
 My Master Degree Thesis
 "DESIGN AND VERIFICATION OF DDR SDRAM MEMORY CONTROLLER USING SYSTEMVERILOG FOR HIGHER COVERAGE"
 
